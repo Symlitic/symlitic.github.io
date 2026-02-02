@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Network | Symlitic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body { background-color: #0a0a0a; color: white; font-family: sans-serif; }</style>
+</head>
+<body class="p-8">
+    <nav class="flex justify-between items-center mb-20 max-w-6xl mx-auto">
+        <a href="index.html" class="text-2xl font-bold tracking-tighter uppercase">Symlitic</a>
+        <a href="index.html" class="text-gray-400 hover:text-white">Back to Home</a>
+    </nav>
+
+    <section class="max-w-2xl mx-auto">
+        <h2 class="text-4xl font-bold mb-4 text-cyan-500">Join the Network</h2>
+        <p class="text-gray-400 mb-8">Apply to join our roster of vetted AI and productivity creators. We'll match you with brands that fit your audience perfectly.</p>
+
+        <form action="https://formspree.io/f/your_unique_id" method="POST" class="space-y-6">
+            <input type="hidden" name="_subject" value="New Creator Application!">
+            <div>
+                <label class="block text-sm font-mono text-gray-500 mb-2">CHANNEL / SOCIAL HANDLE</label>
+                <input type="text" name="handle" required class="w-full bg-gray-900 border border-gray-800 p-3 rounded-lg focus:outline-none focus:border-cyan-500">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-mono text-gray-500 mb-2">PRIMARY PLATFORM</label>
+                    <select name="platform" class="w-full bg-gray-900 border border-gray-800 p-3 rounded-lg focus:outline-none focus:border-cyan-500">
+                        <option>YouTube</option>
+                        <option>LinkedIn</option>
+                        <option>X (Twitter)</option>
+                        <option>Newsletter</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-mono text-gray-500 mb-2">AUDIENCE SIZE</label>
+                    <input type="text" name="size" placeholder="e.g. 50k" class="w-full bg-gray-900 border border-gray-800 p-3 rounded-lg focus:outline-none focus:border-cyan-500">
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-mono text-gray-500 mb-2">AVERAGE VIEWS/ENGAGEMENT</label>
+                <input type="text" name="metrics" required class="w-full bg-gray-900 border border-gray-800 p-3 rounded-lg focus:outline-none focus:border-cyan-500">
+            </div>
+            <div>
+                <label class="block text-sm font-mono text-gray-500 mb-2">WHY DO YOU WANT TO WORK WITH SYMLITIC?</label>
+                <textarea name="reason" rows="3" class="w-full bg-gray-900 border border-gray-800 p-3 rounded-lg focus:outline-none focus:border-cyan-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-cyan-600 p-4 rounded-lg font-bold hover:bg-cyan-700 transition">Submit Application</button>
+        </form>
+    </section>
+</body>
+</html>
